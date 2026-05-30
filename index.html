@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gabriel Ahijón — UX Design Portfolio</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="lang-es">
+
+<!-- NAV -->
+<nav>
+  <a href="#hero" class="nav-logo">Gabriel <span>Ahijón</span></a>
+  <ul class="nav-links">
+    <li class="nav-link-item"><a href="#about"><span data-lang="es" class="inline">Sobre mí</span><span data-lang="en" class="inline">About</span></a></li>
+    <li class="nav-link-item"><a href="#process"><span data-lang="es" class="inline">Proceso</span><span data-lang="en" class="inline">Process</span></a></li>
+    <li class="nav-link-item"><a href="#projects"><span data-lang="es" class="inline">Proyectos</span><span data-lang="en" class="inline">Projects</span></a></li>
+    <li class="nav-link-item"><a href="#contact"><span data-lang="es" class="inline">Contacto</span><span data-lang="en" class="inline">Contact</span></a></li>
+    <li><button class="lang-toggle" onclick="toggleLang()">EN</button></li>
+    <li class="nav-hamburger-item"><button class="hamburger" onclick="toggleMenu()" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button></li>
+  </ul>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobile-menu">
+  <nav class="mobile-nav">
+    <a href="#about" onclick="toggleMenu()"><span data-lang="es" class="inline">Sobre mí</span><span data-lang="en" class="inline">About</span></a>
+    <a href="#process" onclick="toggleMenu()"><span data-lang="es" class="inline">Proceso</span><span data-lang="en" class="inline">Process</span></a>
+    <a href="#projects" onclick="toggleMenu()"><span data-lang="es" class="inline">Proyectos</span><span data-lang="en" class="inline">Projects</span></a>
+    <a href="#contact" onclick="toggleMenu()"><span data-lang="es" class="inline">Contacto</span><span data-lang="en" class="inline">Contact</span></a>
+  </nav>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-inner">
+    <p class="hero-eyebrow">UX Design Portfolio</p>
+    <h1 class="hero-name">Gabriel <span>Ahijón</span></h1>
+    <p class="hero-title">UX Design Manager</p>
+    <p class="hero-desc">
+      <span data-lang="es" class="inline">Más de 20 años diseñando experiencias digitales centradas en el usuario — desde apps móviles hasta plataformas web complejas, en sectores como Smart Home, Seguridad e IoT.</span>
+      <span data-lang="en" class="inline">Over 20 years designing user-centred digital experiences — from mobile apps to complex web platforms, across Smart Home, Security and IoT sectors.</span>
+    </p>
+    <div class="hero-cta">
+      <a href="#projects" class="btn-primary">
+        <span data-lang="es" class="inline">Ver proyectos</span>
+        <span data-lang="en" class="inline">View projects</span>
+      </a>
+      <a href="cv-es.html" class="btn-secondary" id="cv-link">
+        <span data-lang="es" class="inline">Descargar CV</span>
+        <span data-lang="en" class="inline">Download CV</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <p class="section-label">
+    <span data-lang="es" class="inline">Sobre mí</span>
+    <span data-lang="en" class="inline">About me</span>
+  </p>
+  <h2 class="section-title">
+    <span data-lang="es" class="inline">Diseñando experiencias intuitivas y atractivas</span>
+    <span data-lang="en" class="inline">Crafting intuitive and engaging experiences</span>
+  </h2>
+
+  <div class="about-photo">
+    <img src="img/foto.jpg" alt="Gabriel Ahijón">
+  </div>
+
+  <div class="about-text">
+    <div data-lang="es">
+      <p>Mi labor es diseñar experiencias digitales e interfaces personalizadas centradas en las personas que las utilizan. Mi misión es simplificar las interacciones con los productos digitales, por complejos que puedan resultar, permitiendo que la experiencia del usuario sea intuitiva y agradable.</p>
+      <p>Al priorizar la claridad y la usabilidad, cierro la brecha entre la tecnología y las necesidades cotidianas de las personas. Mi proceso se basa en la investigación, la ideación creativa y pruebas exhaustivas para asegurar que los productos no sólo son visualmente atractivos, sino también fáciles de entender y navegar.</p>
+      <p>Mi enfoque combina creatividad con una sólida comprensión técnica, lo que me permite aportar soluciones que cumplen con las expectativas de los usuarios y están alineadas con los objetivos estratégicos de negocio.</p>
+    </div>
+    <div data-lang="en">
+      <p>My job is to design digital experiences and personalized interfaces focused on the people who use them. My mission is to simplify interactions with digital products, no matter how complex they may be, ensuring that the user experience is intuitive and enjoyable.</p>
+      <p>By prioritizing clarity and usability, I bridge the gap between technology and people's everyday needs. My process is based on research, creative ideation, and thorough testing to ensure that products are not only visually appealing but also easy to understand and navigate.</p>
+      <p>My approach combines creativity with a strong technical understanding, allowing me to deliver solutions that not only meet user expectations but also align with strategic business goals.</p>
+    </div>
+    <div class="about-tags">
+      <span class="tag">Smart Home</span>
+      <span class="tag">IoT</span>
+      <span class="tag">Security</span>
+      <span class="tag">Design Systems</span>
+      <span class="tag">White-label</span>
+      <span class="tag">Mobile</span>
+      <span class="tag">Web</span>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process">
+  <p class="section-label">
+    <span data-lang="es" class="inline">Mi proceso</span>
+    <span data-lang="en" class="inline">My process</span>
+  </p>
+  <h2 class="section-title">
+    <span data-lang="es" class="inline">Mi proceso de trabajo</span>
+    <span data-lang="en" class="inline">My working process</span>
+  </h2>
+  <p class="process-intro">
+    <span data-lang="es" class="inline">Un proceso colaborativo, basado en la investigación y las pruebas constantes para asegurar que cada interacción sea fácil, fluida y, sobre todo, agradable.</span>
+    <span data-lang="en" class="inline">A collaborative process, research-driven and constantly tested to ensure that every interaction is easy, seamless, and, above all, enjoyable.</span>
+  </p>
+
+  <div class="process-steps">
+
+    <article class="process-step">
+      <div class="process-step-visual">
+        <img class="step-icon" src="img/process-step-1.png" alt="">
+      </div>
+      <div class="process-step-body">
+        <h3 class="step-name"><span data-lang="es" class="inline">Investigación y Análisis</span><span data-lang="en" class="inline">Research &amp; Analysis</span></h3>
+        <p class="step-desc">
+          <span data-lang="es" class="inline">Entender al usuario, analizar tendencias del mercado y la competencia, y definir personas y perfiles de uso.</span>
+          <span data-lang="en" class="inline">Understanding the user, analysing market trends and competition, and defining personas and user profiles.</span>
+        </p>
+      </div>
+    </article>
+
+    <article class="process-step">
+      <div class="process-step-visual">
+        <img class="step-icon" src="img/process-step-2.png" alt="">
+      </div>
+      <div class="process-step-body">
+        <h3 class="step-name"><span data-lang="es" class="inline">Definición</span><span data-lang="en" class="inline">Definition</span></h3>
+        <p class="step-desc">
+          <span data-lang="es" class="inline">Definir servicios y funcionalidades, identificar problemas clave, redactar historias de usuario y definir flujos.</span>
+          <span data-lang="en" class="inline">Defining services and features, identifying key problems, writing user stories and mapping out user flows.</span>
+        </p>
+      </div>
+    </article>
+
+    <article class="process-step">
+      <div class="process-step-visual">
+        <img class="step-icon" src="img/process-step-3.png" alt="">
+      </div>
+      <div class="process-step-body">
+        <h3 class="step-name"><span data-lang="es" class="inline">Prototipado</span><span data-lang="en" class="inline">Wireframing</span></h3>
+        <p class="step-desc">
+          <span data-lang="es" class="inline">Crear wireframes de baja fidelidad, encajarlos con la estructura y prepararlos para las pruebas iniciales.</span>
+          <span data-lang="en" class="inline">Creating low-fidelity wireframes, fitting them into the structure and preparing them for initial testing.</span>
+        </p>
+      </div>
+    </article>
+
+    <article class="process-step">
+      <div class="process-step-visual">
+        <img class="step-icon" src="img/process-step-4.png" alt="">
+      </div>
+      <div class="process-step-body">
+        <h3 class="step-name"><span data-lang="es" class="inline">Diseño Visual e Interacción</span><span data-lang="en" class="inline">Visual &amp; Interaction Design</span></h3>
+        <p class="step-desc">
+          <span data-lang="es" class="inline">Desarrollar interfaces detalladas con la experiencia del usuario en el centro, diseñar la propuesta visual y validar la accesibilidad.</span>
+          <span data-lang="en" class="inline">Developing detailed interfaces with user experience at the core, designing the visual proposal and validating accessibility.</span>
+        </p>
+      </div>
+    </article>
+
+    <article class="process-step">
+      <div class="process-step-visual">
+        <img class="step-icon" src="img/process-step-5.png" alt="">
+      </div>
+      <div class="process-step-body">
+        <h3 class="step-name"><span data-lang="es" class="inline">Prototipo de Alta Fidelidad</span><span data-lang="en" class="inline">Hi-Fidelity Mockup</span></h3>
+        <p class="step-desc">
+          <span data-lang="es" class="inline">Crear prototipos interactivos de alta fidelidad para trabajar el diseño de interacción y validar con stakeholders.</span>
+          <span data-lang="en" class="inline">Creating interactive hi-fidelity prototypes to refine interaction design and validate with stakeholders.</span>
+        </p>
+      </div>
+    </article>
+
+    <article class="process-step">
+      <div class="process-step-visual">
+        <img class="step-icon" src="img/process-step-6.png" alt="">
+      </div>
+      <div class="process-step-body">
+        <h3 class="step-name"><span data-lang="es" class="inline">Pruebas y Optimización</span><span data-lang="en" class="inline">Testing &amp; Optimisation</span></h3>
+        <p class="step-desc">
+          <span data-lang="es" class="inline">Realizar pruebas de usuario, analizar métricas e implementar mejoras basadas en el feedback recibido.</span>
+          <span data-lang="en" class="inline">Running user testing, analysing metrics and implementing improvements based on the feedback received.</span>
+        </p>
+      </div>
+    </article>
+
+    <article class="process-step">
+      <div class="process-step-visual">
+        <img class="step-icon" src="img/process-step-7.png" alt="">
+      </div>
+      <div class="process-step-body">
+        <h3 class="step-name"><span data-lang="es" class="inline">Entrega y Desarrollo</span><span data-lang="en" class="inline">Delivery &amp; Handoff</span></h3>
+        <p class="step-desc">
+          <span data-lang="es" class="inline">Preparar especificaciones de diseño y colaborar con el equipo de desarrollo para asegurar la fidelidad del producto final.</span>
+          <span data-lang="en" class="inline">Preparing design specs and collaborating with the development team to ensure fidelity to the final product.</span>
+        </p>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <p class="section-label">
+    <span data-lang="es" class="inline">Proyectos</span>
+    <span data-lang="en" class="inline">Projects</span>
+  </p>
+  <h2 class="section-title">
+    <span data-lang="es" class="inline">Casos de éxito</span>
+    <span data-lang="en" class="inline">Success stories</span>
+  </h2>
+
+  <div class="projects-grid">
+
+    <!-- WeR@Home+ -->
+    <article class="project-card">
+      <div class="project-body">
+        <p class="project-tag">
+          <span data-lang="es" class="inline">Essence Group · 2020–2025 · App Móvil · Smart Home · IoT · ~100.000 usuarios · 4 operadores</span>
+          <span data-lang="en" class="inline">Essence Group · 2020–2025 · Mobile App · Smart Home · IoT · ~100,000 users · 4 operators</span>
+        </p>
+        <h3 class="project-title">WeR@Home+</h3>
+
+        <p class="project-desc">
+          <span data-lang="es" class="inline">Como diseñador UX/UI, fui responsable del diseño integral de WeR@Home+, un sistema completo de seguridad inteligente desplegado por 4 operadores con más de 100.000 usuarios. El proyecto incluía una app móvil para usuarios finales y un Centro de Administración web para proveedores. Desarrollado como solución white-label modular, adaptable a distintas identidades de marca sin comprometer la coherencia ni la usabilidad.</span>
+          <span data-lang="en" class="inline">As UX/UI designer, I was solely responsible for the end-to-end design of WeR@Home+, a comprehensive smart security system deployed across 4 operators with over 100,000 users. The project included a mobile app for end-users and a web-based Administration Centre for service providers. Built as a modular white-label solution, adaptable to different brand identities without compromising consistency or usability.</span>
+        </p>
+
+        <div class="project-chips" style="margin: 20px 0 32px;">
+          <span class="chip">UX Research</span>
+          <span class="chip">Wireframing</span>
+          <span class="chip">Hi-Fi Prototyping</span>
+          <span class="chip">Design System</span>
+          <span class="chip">White-label</span>
+          <span class="chip">Usability Testing</span>
+          <span class="chip">IoT</span>
+        </div>
+
+        <div class="project-gallery">
+          <img class="gallery-thumb" src="img/wer/01.jpg" alt="Dashboard" onclick="lightboxOpen('wer', 0)">
+          <img class="gallery-thumb" src="img/wer/02.jpg" alt="Dashboard — vista detalle" onclick="lightboxOpen('wer', 1)">
+          <img class="gallery-thumb" src="img/wer/03.jpg" alt="Cámara en directo" onclick="lightboxOpen('wer', 2)">
+          <img class="gallery-thumb" src="img/wer/04.jpg" alt="Reglas inteligentes" onclick="lightboxOpen('wer', 3)">
+          <img class="gallery-thumb" src="img/wer/05.jpg" alt="Editor de reglas" onclick="lightboxOpen('wer', 4)">
+          <img class="gallery-thumb" src="img/wer/06.jpg" alt="Automatización" onclick="lightboxOpen('wer', 5)">
+        </div>
+
+        <div class="case-study">
+
+          <div class="case-phase">
+            <div class="case-phase-label">
+              <span data-lang="es" class="inline">01 · Investigación y Análisis</span>
+              <span data-lang="en" class="inline">01 · Research &amp; Analysis</span>
+            </div>
+            <ul class="case-list">
+              <li>
+                <span data-lang="es" class="inline"><strong>Análisis de la competencia:</strong> estudio de aplicaciones similares en el mercado de seguridad y domótica para identificar fortalezas y debilidades en funcionalidades y experiencia de usuario.</span>
+                <span data-lang="en" class="inline"><strong>Competitive analysis:</strong> similar applications in the security and home automation market were studied to identify strengths and weaknesses in their functionalities and user experience.</span>
+              </li>
+              <li>
+                <span data-lang="es" class="inline"><strong>Definición de clústers de usuarios:</strong> segmentación en perfiles como propietarios, administradores de negocio y técnicos de seguridad, para comprender mejor sus necesidades y expectativas.</span>
+                <span data-lang="en" class="inline"><strong>User cluster definition:</strong> users were segmented into profiles — homeowners, business administrators, and security technicians — to better understand their needs and expectations.</span>
+              </li>
+              <li>
+                <span data-lang="es" class="inline"><strong>User Stories:</strong> escenarios de uso para mapear la experiencia ideal en la gestión de alarmas, videovigilancia y dispositivos IoT.</span>
+                <span data-lang="en" class="inline"><strong>User Stories:</strong> usage scenarios created to map the ideal user experience for managing alarms, video surveillance, and IoT devices.</span>
+              </li>
+              <li>
+                <span data-lang="es" class="inline"><strong>Entrevistas con usuarios:</strong> validación de necesidades y puntos de dolor en la gestión de seguridad y automatización del hogar.</span>
+                <span data-lang="en" class="inline"><strong>User interviews:</strong> conducted with potential users to validate needs and understand main pain points in security and home automation management.</span>
+              </li>
+              <li>
+                <span data-lang="es" class="inline"><strong>Análisis de requisitos:</strong> definición conjunta con stakeholders de las funcionalidades clave según necesidades de mercado y capacidades tecnológicas.</span>
+                <span data-lang="en" class="inline"><strong>Requirement analysis:</strong> key functionalities defined in collaboration with stakeholders, aligned with market needs and technological capabilities.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="case-phase">
+            <div class="case-phase-label">
+              <span data-lang="es" class="inline">02 · Arquitectura de Información y Prototipado</span>
+              <span data-lang="en" class="inline">02 · Information Architecture &amp; Prototyping</span>
+            </div>
+            <ul class="case-list">
+              <li>
+                <span data-lang="es" class="inline"><strong>Mapa de la aplicación:</strong> estructura en módulos principales — gestión de alarmas, videovigilancia, automatización IoT y configuración personalizada.</span>
+                <span data-lang="en" class="inline"><strong>Application map:</strong> the app was structured into key modules — alarm management, video surveillance, IoT automation, and personalised settings.</span>
+              </li>
+              <li>
+                <span data-lang="es" class="inline"><strong>Wireframes:</strong> bocetos de baja fidelidad para definir la disposición de elementos clave y los flujos de interacción.</span>
+                <span data-lang="en" class="inline"><strong>Wireframes:</strong> low-fidelity sketches created to define the layout of key elements and interaction flows.</span>
+              </li>
+              <li>
+                <span data-lang="es" class="inline"><strong>Pruebas de usabilidad tempranas:</strong> tests con usuarios para validar la navegación y realizar ajustes antes de avanzar al diseño visual.</span>
+                <span data-lang="en" class="inline"><strong>Early usability testing:</strong> tests conducted with users to validate navigation and make adjustments before advancing to visual design.</span>
+              </li>
+            </ul>
+            <img class="case-process-img" src="img/wer/process-wireframes.jpg" alt="Wireframes y flujos de interacción" onclick="lightboxOpen('wer-process', 0)">
+          </div>
+
+          <div class="case-phase">
+            <div class="case-phase-label">
+              <span data-lang="es" class="inline">03 · Diseño Visual e Interacción</span>
+              <span data-lang="en" class="inline">03 · Visual &amp; Interaction Design</span>
+            </div>
+            <ul class="case-list">
+              <li>
+                <span data-lang="es" class="inline"><strong>Prototipos de alta fidelidad:</strong> interfaz moderna y minimalista priorizando claridad y accesibilidad.</span>
+                <span data-lang="en" class="inline"><strong>High-fidelity prototypes:</strong> modern and minimalist interface prioritising clarity and accessibility.</span>
+              </li>
+              <li>
+                <span data-lang="es" class="inline"><strong>Interacciones y microanimaciones:</strong> animaciones sutiles para mejorar la retroalimentación visual y la experiencia de navegación.</span>
+                <span data-lang="en" class="inline"><strong>Interactions and microanimations:</strong> subtle animations implemented to enhance visual feedback and navigation experience.</span>
+              </li>
+              <li>
+                <span data-lang="es" class="inline"><strong>Modo oscuro y accesibilidad:</strong> personalización para mejorar la legibilidad en distintos entornos de iluminación.</span>
+                <span data-lang="en" class="inline"><strong>Dark mode and accessibility:</strong> personalisation options included to improve readability and usability in different lighting conditions.</span>
+              </li>
+              <li>
+                <span data-lang="es" class="inline"><strong>Sistema de reglas inteligentes:</strong> el principal reto de UX fue diseñar un sistema de automatización potente pero comprensible para usuarios sin conocimientos técnicos, mediante revelación progresiva e interacciones guiadas.</span>
+                <span data-lang="en" class="inline"><strong>Smart rule system:</strong> the main UX challenge was designing a powerful automation system that remained understandable for non-technical users, through progressive disclosure and guided interactions.</span>
+              </li>
+            </ul>
+            <img class="case-process-img" src="img/wer/process-flow.jpg" alt="User flow con pantallas hi-fi" onclick="lightboxOpen('wer-process', 1)">
+          </div>
+
+          <div class="case-phase">
+            <div class="case-phase-label">
+              <span data-lang="es" class="inline">04 · Pruebas y Optimización</span>
+              <span data-lang="en" class="inline">04 · Testing &amp; Optimisation</span>
+            </div>
+            <ul class="case-list">
+              <li>
+                <span data-lang="es" class="inline"><strong>Test de usabilidad:</strong> evaluación de las funciones clave — activación de alarmas, visualización en tiempo real de cámaras de seguridad.</span>
+                <span data-lang="en" class="inline"><strong>Usability testing:</strong> evaluation of key features — alarm activation and real-time viewing of security cameras.</span>
+              </li>
+              <li>
+                <span data-lang="es" class="inline"><strong>Feedback iterativo:</strong> mejoras continuas en base a la retroalimentación de usuarios beta.</span>
+                <span data-lang="en" class="inline"><strong>Iterative feedback:</strong> ongoing improvements based on feedback from beta users.</span>
+              </li>
+              <li>
+                <span data-lang="es" class="inline"><strong>Optimización de accesibilidad:</strong> ajustes visuales y funcionales para mejorar la inclusión de personas con distintas capacidades.</span>
+                <span data-lang="en" class="inline"><strong>Accessibility optimisation:</strong> visual and functional elements adjusted to enhance inclusion for users with different abilities.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="case-outcome">
+            <span data-lang="es" class="inline">El diseño final permitió a los usuarios gestionar la seguridad de sus hogares y negocios de forma intuitiva y eficiente. La combinación de diseño claro, interacciones optimizadas y pruebas constantes resultó en una experiencia que aumentó la confianza de los usuarios en el sistema — desplegada con éxito en 4 operadores y más de 100.000 usuarios.</span>
+            <span data-lang="en" class="inline">The final design enabled users to manage their home and business security intuitively and efficiently. The combination of clear design, optimised interactions, and continuous testing resulted in an experience that increased user confidence in the system — successfully deployed across 4 operators and over 100,000 users.</span>
+          </div>
+
+        </div>
+      </div>
+    </article>
+
+    <!-- Portal Turismo Extremadura -->
+    <article class="project-card">
+      <div class="project-body">
+        <p class="project-tag">
+          <span data-lang="es" class="inline">BetyByte · Junta de Extremadura · 2013 · Propuesta para concurso público · Plataforma Web · Turismo</span>
+          <span data-lang="en" class="inline">BetyByte · Junta de Extremadura · 2013 · Public tender proposal · Web Platform · Tourism</span>
+        </p>
+        <h3 class="project-title">
+          <span data-lang="es" class="inline">Portal de Turismo de Extremadura</span>
+          <span data-lang="en" class="inline">Tourism Portal of Extremadura</span>
+        </h3>
+        <div class="project-meta">
+          <p class="project-desc">
+            <span data-lang="es" class="inline">Como <strong>responsable de la dirección visual</strong>, definí desde cero el lenguaje gráfico de esta propuesta para concurso público — una plataforma intuitiva y atractiva orientada a facilitar el acceso a la información turística y promover la región como destino, con un diseño visual basado en la identidad de Extremadura y plenamente responsive.</span>
+            <span data-lang="en" class="inline">As <strong>visual design lead</strong>, I defined the entire visual language of this public tender proposal from scratch — an intuitive and engaging platform aimed at making tourism information accessible and promoting the region as a destination, with a visual design rooted in Extremadura's identity and fully responsive.</span>
+          </p>
+          <div class="project-chips">
+            <span class="chip">UX Research</span>
+            <span class="chip">Wireframing</span>
+            <span class="chip">Visual Design</span>
+            <span class="chip">Responsive</span>
+          </div>
+        </div>
+
+        <div class="project-gallery">
+          <img class="gallery-thumb" src="img/extremadura/01.jpg" alt="Home" onclick="lightboxOpen('extremadura', 0)">
+          <img class="gallery-thumb" src="img/extremadura/02.jpg" alt="Busca restaurantes" onclick="lightboxOpen('extremadura', 1)">
+          <img class="gallery-thumb" src="img/extremadura/03.jpg" alt="Municipio" onclick="lightboxOpen('extremadura', 2)">
+          <img class="gallery-thumb" src="img/extremadura/04.jpg" alt="Agenda" onclick="lightboxOpen('extremadura', 3)">
+        </div>
+
+        <div class="case-study">
+
+          <div class="case-phase">
+            <div class="case-phase-label">
+              <span data-lang="es" class="inline">01 · Concepto y dirección visual</span>
+              <span data-lang="en" class="inline">01 · Concept &amp; Visual Direction</span>
+            </div>
+            <ul class="case-list">
+              <li>
+                <span data-lang="es" class="inline"><strong>Investigación visual:</strong> exploración de referencias estéticas y de la identidad institucional de la región para fundamentar la propuesta gráfica.</span>
+                <span data-lang="en" class="inline"><strong>Visual research:</strong> exploration of aesthetic references and the region's institutional identity to inform the visual proposal.</span>
+              </li>
+              <li>
+                <span data-lang="es" class="inline"><strong>Concepto visual:</strong> definición del lenguaje gráfico desde cero — paleta cromática, tipografía y tratamiento fotográfico que transmiten cercanía, autenticidad y carácter regional.</span>
+                <span data-lang="en" class="inline"><strong>Visual concept:</strong> definition of the graphic language from scratch — colour palette, typography, and photographic treatment conveying warmth, authenticity, and regional character.</span>
+              </li>
+              <li>
+                <span data-lang="es" class="inline"><strong>Dirección creativa:</strong> definición de la jerarquía visual, criterios de uso de imagen y tono gráfico aplicables a todo el portal.</span>
+                <span data-lang="en" class="inline"><strong>Creative direction:</strong> definition of visual hierarchy, image usage criteria, and graphic tone applicable across the entire portal.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="case-phase">
+            <div class="case-phase-label">
+              <span data-lang="es" class="inline">02 · Diseño de pantallas</span>
+              <span data-lang="en" class="inline">02 · Screen Design</span>
+            </div>
+            <ul class="case-list">
+              <li>
+                <span data-lang="es" class="inline"><strong>Sistema visual:</strong> componentes, jerarquía y módulos de contenido diseñados para escalar a todo el portal con coherencia y reutilización.</span>
+                <span data-lang="en" class="inline"><strong>Visual system:</strong> components, hierarchy, and content modules designed to scale across the entire portal with consistency and reusability.</span>
+              </li>
+              <li>
+                <span data-lang="es" class="inline"><strong>Pantallas clave:</strong> diseño detallado de home, destinos, agenda cultural, servicios y fichas de contenido, con la imagen como protagonista.</span>
+                <span data-lang="en" class="inline"><strong>Key screens:</strong> detailed design of home, destinations, cultural agenda, services, and content pages, with imagery taking centre stage.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="case-phase">
+            <div class="case-phase-label">
+              <span data-lang="es" class="inline">03 · Diseño Responsive</span>
+              <span data-lang="en" class="inline">03 · Responsive Design</span>
+            </div>
+            <ul class="case-list">
+              <li>
+                <span data-lang="es" class="inline"><strong>Adaptación multi-dispositivo:</strong> interfaz optimizada para escritorio, tabletas y móviles, manteniendo la coherencia visual en cualquier contexto.</span>
+                <span data-lang="en" class="inline"><strong>Multi-device adaptation:</strong> interface optimised for desktop, tablets, and mobile, keeping visual consistency in any context.</span>
+              </li>
+              <li>
+                <span data-lang="es" class="inline"><strong>Reflujo de componentes:</strong> reorganización inteligente de contenidos según el espacio disponible, sin perder la legibilidad ni el acceso a la información clave.</span>
+                <span data-lang="en" class="inline"><strong>Component reflow:</strong> smart reorganisation of content based on available space, preserving readability and access to key information.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="gap-placeholder gap-placeholder--soft">
+            <span class="gap-label">GAP opcional · Material de proceso</span>
+            <p>Moodboards, exploraciones visuales o capturas de proceso. Cuando los tengas:</p>
+            <ul>
+              <li><code>img/extremadura/process-01.jpg</code></li>
+              <li><code>img/extremadura/process-02.jpg</code></li>
+            </ul>
+          </div>
+
+          <div class="case-outcome">
+            <span data-lang="es" class="inline">La propuesta se presentó al concurso público de la Junta de Extremadura, alcanzando el segundo puesto entre las candidaturas evaluadas. El trabajo demostró capacidad de respuesta a pliegos institucionales, con criterios de usabilidad, identidad regional y accesibilidad alineados con los estándares de la administración pública.</span>
+            <span data-lang="en" class="inline">The proposal was submitted to Junta de Extremadura's public tender, reaching second place among the evaluated candidates. The work demonstrated the ability to respond to institutional briefs, with usability, regional identity, and accessibility criteria aligned with public administration standards.</span>
+          </div>
+
+        </div>
+      </div>
+    </article>
+
+    <!-- Portal Turismo Madrid -->
+    <article class="project-card">
+      <div class="project-body">
+        <p class="project-tag">
+          <span data-lang="es" class="inline">BetyByte · Ayuntamiento de Madrid · 2012 · Plataforma Web · Turismo · Responsive</span>
+          <span data-lang="en" class="inline">BetyByte · Madrid City Council · 2012 · Web Platform · Tourism · Responsive</span>
+        </p>
+        <h3 class="project-title">
+          <span data-lang="es" class="inline">Portal de Turismo de Madrid</span>
+          <span data-lang="en" class="inline">Tourism Portal of Madrid</span>
+        </h3>
+        <div class="project-meta">
+          <p class="project-desc">
+            <span data-lang="es" class="inline">Como <strong>responsable de la dirección visual</strong>, definí desde cero el lenguaje gráfico del portal turístico de la ciudad — una plataforma atractiva y fácil de usar que permite a los visitantes explorar la oferta turística de Madrid de forma intuitiva y refuerza su posicionamiento como destino de referencia, con una interfaz plenamente adaptable a cualquier dispositivo.</span>
+            <span data-lang="en" class="inline">As <strong>visual design lead</strong>, I defined the entire visual language of the city's tourism portal from scratch — a user-friendly, visually appealing platform allowing visitors to explore Madrid's tourism offering intuitively and reinforcing its positioning as a leading destination, with an interface fully adaptable to any device.</span>
+          </p>
+          <div class="project-chips">
+            <span class="chip">UX Research</span>
+            <span class="chip">Wireframing</span>
+            <span class="chip">Visual Design</span>
+            <span class="chip">Responsive</span>
+          </div>
+        </div>
+
+        <div class="project-gallery">
+          <img class="gallery-thumb" src="img/madrid/01.jpg" alt="Home" onclick="lightboxOpen('madrid', 0)">
+          <img class="gallery-thumb" src="img/madrid/02.jpg" alt="Actualidad" onclick="lightboxOpen('madrid', 1)">
+          <img class="gallery-thumb" src="img/madrid/03.jpg" alt="Home carrusel" onclick="lightboxOpen('madrid', 2)">
+          <img class="gallery-thumb" src="img/madrid/04.jpg" alt="Detalle evento" onclick="lightboxOpen('madrid', 3)">
+          <img class="gallery-thumb" src="img/madrid/05.jpg" alt="Detalle recurso hotel" onclick="lightboxOpen('madrid', 4)">
+          <img class="gallery-thumb" src="img/madrid/06.jpg" alt="Planificador" onclick="lightboxOpen('madrid', 5)">
+        </div>
+
+        <div class="case-study">
+
+          <div class="case-phase">
+            <div class="case-phase-label">
+              <span data-lang="es" class="inline">01 · Concepto y dirección visual</span>
+              <span data-lang="en" class="inline">01 · Concept &amp; Visual Direction</span>
+            </div>
+            <ul class="case-list">
+              <li>
+                <span data-lang="es" class="inline"><strong>Investigación visual:</strong> exploración de referencias estéticas y de la identidad cultural de Madrid para fundamentar la propuesta gráfica.</span>
+                <span data-lang="en" class="inline"><strong>Visual research:</strong> exploration of aesthetic references and Madrid's cultural identity to inform the visual proposal.</span>
+              </li>
+              <li>
+                <span data-lang="es" class="inline"><strong>Concepto visual:</strong> definición del lenguaje gráfico desde cero — paleta cromática, tipografía y tratamiento fotográfico que equilibran carácter institucional y atractivo emocional.</span>
+                <span data-lang="en" class="inline"><strong>Visual concept:</strong> definition of the graphic language from scratch — colour palette, typography, and photographic treatment balancing institutional character with emotional appeal.</span>
+              </li>
+              <li>
+                <span data-lang="es" class="inline"><strong>Dirección creativa:</strong> definición de la jerarquía visual, criterios de uso de imagen y tono gráfico aplicables a todo el portal.</span>
+                <span data-lang="en" class="inline"><strong>Creative direction:</strong> definition of visual hierarchy, image usage criteria, and graphic tone applicable across the entire portal.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="case-phase">
+            <div class="case-phase-label">
+              <span data-lang="es" class="inline">02 · Diseño de pantallas</span>
+              <span data-lang="en" class="inline">02 · Screen Design</span>
+            </div>
+            <ul class="case-list">
+              <li>
+                <span data-lang="es" class="inline"><strong>Sistema visual:</strong> componentes, jerarquía y módulos de contenido diseñados para escalar a todo el portal con coherencia y reutilización.</span>
+                <span data-lang="en" class="inline"><strong>Visual system:</strong> components, hierarchy, and content modules designed to scale across the entire portal with consistency and reusability.</span>
+              </li>
+              <li>
+                <span data-lang="es" class="inline"><strong>Pantallas clave:</strong> diseño detallado de home, experiencias, eventos, recursos turísticos y planificador, con la fotografía editorial como protagonista.</span>
+                <span data-lang="en" class="inline"><strong>Key screens:</strong> detailed design of home, experiences, events, tourist resources, and trip planner, with editorial photography taking centre stage.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="case-phase">
+            <div class="case-phase-label">
+              <span data-lang="es" class="inline">03 · Diseño Responsive</span>
+              <span data-lang="en" class="inline">03 · Responsive Design</span>
+            </div>
+            <ul class="case-list">
+              <li>
+                <span data-lang="es" class="inline"><strong>Adaptación multi-dispositivo:</strong> interfaz optimizada para escritorio, tabletas y móviles, manteniendo la coherencia visual en cualquier contexto.</span>
+                <span data-lang="en" class="inline"><strong>Multi-device adaptation:</strong> interface optimised for desktop, tablets, and mobile, keeping visual consistency in any context.</span>
+              </li>
+              <li>
+                <span data-lang="es" class="inline"><strong>Reflujo de componentes:</strong> reorganización inteligente de contenidos según el espacio disponible, sin perder la legibilidad ni el acceso a la información clave.</span>
+                <span data-lang="en" class="inline"><strong>Component reflow:</strong> smart reorganisation of content based on available space, preserving readability and access to key information.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="gap-placeholder gap-placeholder--soft">
+            <span class="gap-label">GAP opcional · Material de proceso</span>
+            <p>Moodboards, exploraciones visuales o capturas de proceso. Cuando los tengas:</p>
+            <ul>
+              <li><code>img/madrid/process-01.jpg</code></li>
+              <li><code>img/madrid/process-02.jpg</code></li>
+            </ul>
+          </div>
+
+          <div class="case-outcome">
+            <span data-lang="es" class="inline">El portal se desarrolló y publicó en 2012, consolidando la presencia digital del turismo de Madrid con una experiencia visual sólida y plenamente adaptable. <em>Las pantallas mostradas corresponden al diseño original; el portal ha evolucionado desde entonces y puede no reflejar el estado actual.</em></span>
+            <span data-lang="en" class="inline">The portal was developed and published in 2012, consolidating Madrid's digital tourism presence with a strong, fully adaptable visual experience. <em>The screens shown correspond to the original design; the portal has evolved since and may no longer reflect its current state.</em></span>
+          </div>
+
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <p class="section-label" style="justify-content:center;">
+    <span data-lang="es" class="inline">Contacto</span>
+    <span data-lang="en" class="inline">Contact</span>
+  </p>
+  <h2 class="section-title">
+    <span data-lang="es" class="inline">Hablemos</span>
+    <span data-lang="en" class="inline">Let's talk</span>
+  </h2>
+  <p class="contact-desc">
+    <span data-lang="es" class="inline">Estoy abierto a nuevos retos, colaboraciones o simplemente una buena charla sobre diseño y tecnología. No dudes en escribirme.</span>
+    <span data-lang="en" class="inline">I'm always open to new challenges, collaborations, or simply a good conversation about design and technology. Feel free to drop me a line.</span>
+  </p>
+  <div class="contact-links">
+    <a href="mailto:iphone4.gabi@gmail.com" class="btn-primary">iphone4.gabi@gmail.com</a>
+    <a href="https://www.linkedin.com/in/gabrielux" target="_blank" class="btn-secondary">LinkedIn</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <span>Gabriel Ahijón · UX Design Manager · Madrid</span>
+  <span>
+    <span data-lang="es" class="inline">Diseñado y desarrollado por Gabriel Ahijón</span>
+    <span data-lang="en" class="inline">Designed &amp; built by Gabriel Ahijón</span>
+  </span>
+</footer>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true">
+  <div class="lightbox-overlay" onclick="lightboxClose()"></div>
+  <button class="lightbox-close" onclick="lightboxClose()" aria-label="Cerrar">✕</button>
+  <div class="lightbox-inner">
+    <div class="lightbox-img-wrap" id="lightboxWrap" onclick="lightboxToggleZoom(event)">
+      <button class="lightbox-nav lightbox-nav--prev" onclick="event.stopPropagation(); lightboxPrev()" aria-label="Anterior">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+      <img class="lightbox-img" id="lightboxImg" src="" alt="">
+      <button class="lightbox-nav lightbox-nav--next" onclick="event.stopPropagation(); lightboxNext()" aria-label="Siguiente">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
+      <span class="lightbox-zoom-hint" id="lightboxZoomHint">+ clic para ampliar</span>
+    </div>
+    <div class="lightbox-footer">
+      <p class="lightbox-caption" id="lightboxCaption"></p>
+      <span class="lightbox-count" id="lightboxCount"></span>
+    </div>
+  </div>
+</div>
+
+<script>
+const langBtn = document.querySelector('.lang-toggle');
+const cvLink = document.getElementById('cv-link');
+
+function toggleLang() {
+  const body = document.body;
+  if (body.classList.contains('lang-es')) {
+    body.classList.replace('lang-es', 'lang-en');
+    langBtn.textContent = 'ES';
+    document.documentElement.lang = 'en';
+    cvLink.href = 'cv-en.html';
+  } else {
+    body.classList.replace('lang-en', 'lang-es');
+    langBtn.textContent = 'EN';
+    document.documentElement.lang = 'es';
+    cvLink.href = 'cv-es.html';
+  }
+}
+
+// ── LIGHTBOX ──────────────────────────────────────────────
+// Añade aquí las imágenes de cada proyecto cuando las tengas.
+// El índice de onclick="lightboxOpen(PROYECTO, N)" empieza en 0.
+
+const GALLERIES = {
+  wer: [
+    { src: 'img/wer/01.jpg', caption: 'Dashboard' },
+    { src: 'img/wer/02.jpg', caption: 'Dashboard — vista detalle' },
+    { src: 'img/wer/03.jpg', caption: 'Cámara en directo' },
+    { src: 'img/wer/04.jpg', caption: 'Reglas inteligentes' },
+    { src: 'img/wer/05.jpg', caption: 'Editor de reglas' },
+    { src: 'img/wer/06.jpg', caption: 'Automatización Smart Home' },
+  ],
+  'wer-process': [
+    { src: 'img/wer/process-wireframes.jpg', caption: 'Wireframes y flujos de interacción' },
+    { src: 'img/wer/process-flow.jpg', caption: 'User flow con pantallas hi-fi' },
+  ],
+  extremadura: [
+    { src: 'img/extremadura/01.jpg', caption: 'Home' },
+    { src: 'img/extremadura/02.jpg', caption: 'Busca restaurantes' },
+    { src: 'img/extremadura/03.jpg', caption: 'Municipio' },
+    { src: 'img/extremadura/04.jpg', caption: 'Agenda' },
+  ],
+  madrid: [
+    { src: 'img/madrid/01.jpg', caption: 'Home' },
+    { src: 'img/madrid/02.jpg', caption: 'Actualidad' },
+    { src: 'img/madrid/03.jpg', caption: 'Home carrusel' },
+    { src: 'img/madrid/04.jpg', caption: 'Detalle evento' },
+    { src: 'img/madrid/05.jpg', caption: 'Detalle recurso — Hotel' },
+    { src: 'img/madrid/06.jpg', caption: 'Planificador' },
+  ],
+};
+
+let currentGallery = [];
+let currentSlide = 0;
+let zoomEnabled = false;
+
+// Galerías donde el zoom aporta (imágenes grandes con detalle).
+// El resto (capturas de móvil) ya se ven completas a máxima resolución.
+const ZOOMABLE_GALLERIES = ['extremadura', 'madrid', 'wer-process'];
+
+// ── ZOOM STATE ────────────────────────────────────────────
+let zoomActive = false;
+let dragStart = null;
+let translateX = 0, translateY = 0;
+const ZOOM_SCALE = 2.5;
+
+function lightboxResetZoom() {
+  zoomActive = false;
+  translateX = 0; translateY = 0;
+  const wrap = document.getElementById('lightboxWrap');
+  const img  = document.getElementById('lightboxImg');
+  const hint = document.getElementById('lightboxZoomHint');
+  wrap.classList.remove('is-zoomed', 'is-dragging');
+  img.style.transform = '';
+  hint.style.opacity = '1';
+}
+
+function lightboxToggleZoom(e) {
+  if (!zoomEnabled) return;
+  const wrap = document.getElementById('lightboxWrap');
+  const img  = document.getElementById('lightboxImg');
+  const hint = document.getElementById('lightboxZoomHint');
+  if (dragStart && dragStart.moved) { dragStart = null; return; }
+  if (!zoomActive) {
+    // Calcular punto de click relativo a la imagen para centrar el zoom ahí
+    const rect = img.getBoundingClientRect();
+    const px = ((e.clientX - rect.left) / rect.width  - 0.5) * -1 * (ZOOM_SCALE - 1) * rect.width;
+    const py = ((e.clientY - rect.top)  / rect.height - 0.5) * -1 * (ZOOM_SCALE - 1) * rect.height;
+    translateX = px; translateY = py;
+    zoomActive = true;
+    wrap.classList.add('is-zoomed');
+    img.style.transform = `scale(${ZOOM_SCALE}) translate(${translateX / ZOOM_SCALE}px, ${translateY / ZOOM_SCALE}px)`;
+    hint.style.opacity = '0';
+  } else {
+    lightboxResetZoom();
+  }
+}
+
+// Drag cuando está en zoom
+(function() {
+  const wrap = document.getElementById('lightboxWrap');
+  wrap.addEventListener('mousedown', e => {
+    if (!zoomActive) return;
+    dragStart = { x: e.clientX, y: e.clientY, tx: translateX, ty: translateY, moved: false };
+    wrap.classList.add('is-dragging');
+  });
+  window.addEventListener('mousemove', e => {
+    if (!dragStart || !zoomActive) return;
+    const dx = e.clientX - dragStart.x;
+    const dy = e.clientY - dragStart.y;
+    if (Math.abs(dx) > 3 || Math.abs(dy) > 3) dragStart.moved = true;
+    translateX = dragStart.tx + dx;
+    translateY = dragStart.ty + dy;
+    document.getElementById('lightboxImg').style.transform =
+      `scale(${ZOOM_SCALE}) translate(${translateX / ZOOM_SCALE}px, ${translateY / ZOOM_SCALE}px)`;
+  });
+  window.addEventListener('mouseup', () => {
+    if (dragStart) wrap.classList.remove('is-dragging');
+    setTimeout(() => { dragStart = null; }, 0);
+  });
+})();
+// ──────────────────────────────────────────────────────────
+
+function lightboxOpen(gallery, index) {
+  currentGallery = GALLERIES[gallery];
+  currentSlide = index;
+  zoomEnabled = ZOOMABLE_GALLERIES.includes(gallery);
+  const wrap = document.getElementById('lightboxWrap');
+  wrap.classList.toggle('zoom-disabled', !zoomEnabled);
+  document.getElementById('lightbox').classList.add('is-open');
+  document.body.style.overflow = 'hidden';
+  lightboxResetZoom();
+  lightboxSync(index, false);
+}
+function lightboxClose() {
+  document.getElementById('lightbox').classList.remove('is-open');
+  document.body.style.overflow = '';
+  lightboxResetZoom();
+}
+function lightboxSync(index, animate = true) {
+  lightboxResetZoom();
+  const img = document.getElementById('lightboxImg');
+  const cap = document.getElementById('lightboxCaption');
+  const cnt = document.getElementById('lightboxCount');
+  if (animate) { img.classList.add('is-changing'); cap.classList.add('is-changing'); }
+  setTimeout(() => {
+    img.src         = currentGallery[index].src;
+    cap.textContent = currentGallery[index].caption || '';
+    cnt.textContent = `${index + 1} / ${currentGallery.length}`;
+    img.classList.remove('is-changing');
+    cap.classList.remove('is-changing');
+  }, animate ? 200 : 0);
+}
+function lightboxNext() {
+  currentSlide = (currentSlide + 1) % currentGallery.length;
+  lightboxSync(currentSlide);
+}
+function lightboxPrev() {
+  currentSlide = (currentSlide - 1 + currentGallery.length) % currentGallery.length;
+  lightboxSync(currentSlide);
+}
+document.addEventListener('keydown', e => {
+  if (!document.getElementById('lightbox').classList.contains('is-open')) return;
+  if (e.key === 'Escape')     { zoomActive ? lightboxResetZoom() : lightboxClose(); }
+  if (e.key === 'ArrowRight' && !zoomActive) lightboxNext();
+  if (e.key === 'ArrowLeft'  && !zoomActive) lightboxPrev();
+});
+(function() {
+  const lb = document.getElementById('lightbox');
+  let sx = 0;
+  lb.addEventListener('touchstart', e => { sx = e.touches[0].clientX; }, { passive: true });
+  lb.addEventListener('touchend',   e => {
+    const d = sx - e.changedTouches[0].clientX;
+    if (Math.abs(d) > 40) d > 0 ? lightboxNext() : lightboxPrev();
+  });
+})();
+// ──────────────────────────────────────────────────────────
+
+function toggleMenu() {
+  const menu = document.getElementById('mobile-menu');
+  const btn = document.querySelector('.hamburger');
+  const open = menu.classList.toggle('is-open');
+  btn.classList.toggle('is-open', open);
+  document.body.style.overflow = open ? 'hidden' : '';
+}
+</script>
+
+</body>
+</html>

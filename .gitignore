@@ -1,0 +1,13 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Originales archivados (no se publican)
+**/_delete/
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo

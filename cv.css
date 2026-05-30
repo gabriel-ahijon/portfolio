@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&family=Outfit:wght@300;400;600;700&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --accent: #8B3FA8;
+  --accent-light: #f3ecf7;
+  --text: #1a1a1a;
+  --muted: #666;
+  --subtle: #999;
+  --border: #e0e0e0;
+  --bg-chip: #f7f4fa;
+  --bg-sidebar: #faf8fc;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 9.5pt;
+  color: var(--text);
+  background: #fff;
+  line-height: 1.6;
+  padding: 2.8cm 2.8cm 2.4cm;
+  max-width: 21cm;
+  margin: 0 auto;
+}
+
+/* ── HEADER ── */
+header {
+  margin-bottom: 32px;
+  border-left: 4px solid var(--accent);
+  padding-left: 22px;
+}
+
+h1 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 30pt;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: -1px;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+h1 span { color: var(--accent); }
+
+.job-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 11pt;
+  font-weight: 300;
+  color: var(--muted);
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.tagline {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 9pt;
+  font-weight: 300;
+  font-style: italic;
+  color: var(--subtle);
+  margin-bottom: 14px;
+}
+
+.contact-line {
+  font-size: 8.5pt;
+  color: var(--subtle);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 18px;
+  align-items: center;
+}
+
+.contact-line a { color: var(--subtle); text-decoration: none; }
+.contact-line a:hover { color: var(--accent); }
+
+.contact-line .contact-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.contact-line svg {
+  width: 11px;
+  height: 11px;
+  flex-shrink: 0;
+  opacity: 0.6;
+}
+
+/* ── LAYOUT: 2 COLUMNAS ── */
+.cv-body {
+  display: grid;
+  grid-template-columns: 1fr 220px;
+  gap: 0 28px;
+}
+
+/* ── SECTION TITLES ── */
+h2 {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 7pt;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 14px;
+  margin-top: 26px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+h2:first-child { margin-top: 0; }
+
+h2::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+
+/* ── PERFIL ── */
+.perfil {
+  margin-bottom: 20px;
+}
+
+.perfil p {
+  font-size: 9.5pt;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+/* ── JOBS ── */
+.experience-section {
+  position: relative;
+  padding-left: 20px;
+}
+
+.experience-section::before {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: 6px;
+  bottom: 6px;
+  width: 1px;
+  background: var(--border);
+}
+
+.job {
+  margin-bottom: 16px;
+  page-break-inside: avoid;
+  position: relative;
+}
+
+.job::before {
+  content: '';
+  position: absolute;
+  left: -21px;
+  top: 5px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  border: 2px solid var(--accent);
+  background: #fff;
+}
+
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 1px;
+}
+
+.job-company {
+  font-family: 'Outfit', sans-serif;
+  font-size: 11pt;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.job-period {
+  font-size: 7.5pt;
+  color: var(--muted);
+  white-space: nowrap;
+  flex-shrink: 0;
+  background: var(--bg-chip);
+  padding: 2px 10px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+.job-role {
+  font-size: 8.5pt;
+  font-weight: 500;
+  color: var(--accent);
+  margin-bottom: 7px;
+}
+
+.job ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.job ul li {
+  font-size: 9pt;
+  color: var(--muted);
+  padding-left: 14px;
+  position: relative;
+  line-height: 1.5;
+}
+
+.job ul li::before {
+  content: "·";
+  position: absolute;
+  left: 3px;
+  color: var(--accent);
+  font-size: 12pt;
+  line-height: 1.1;
+}
+
+/* ── SIDEBAR ── */
+.sidebar {
+  background: var(--bg-sidebar);
+  padding: 22px 18px;
+  border-radius: 6px;
+  align-self: start;
+}
+
+.sidebar h2 { margin-top: 22px; }
+.sidebar h2:first-child { margin-top: 0; }
+
+/* ── SKILLS ── */
+.skill-group { margin-bottom: 16px; }
+
+.skill-group-label {
+  font-size: 7.5pt;
+  font-weight: 600;
+  color: var(--text);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+
+.chip-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.chip {
+  background: #fff;
+  color: var(--muted);
+  font-size: 7.5pt;
+  padding: 3px 9px;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+}
+
+
+/* ── FORMACIÓN ── */
+.edu-item {
+  margin-bottom: 12px;
+  page-break-inside: avoid;
+}
+
+.edu-school {
+  font-size: 9pt;
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.4;
+}
+
+.edu-degree {
+  font-size: 8.5pt;
+  color: var(--muted);
+  line-height: 1.4;
+}
+
+.edu-year {
+  font-size: 8pt;
+  color: var(--subtle);
+}
+
+/* ── CERTIFICACIONES ── */
+.cert-item {
+  font-size: 9pt;
+  color: var(--muted);
+  padding: 4px 0;
+  border-bottom: 1px solid var(--border);
+  line-height: 1.4;
+}
+
+.cert-item:last-child { border-bottom: none; }
+
+/* ── PRINT ── */
+@media print {
+  body { padding: 1.4cm 1.8cm; font-size: 9pt; }
+  h1 { font-size: 26pt; }
+  .cv-body { gap: 0 20px; }
+  a { color: inherit !important; text-decoration: none; }
+  #export-trigger { display: none; }
+  .sidebar { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .chip.primary { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+
+@page { size: A4; margin: 0; }
