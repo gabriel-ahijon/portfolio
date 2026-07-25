@@ -642,7 +642,8 @@ section {
 }
 
 .case-process-img {
-  width: 100%;
+  max-width: 25%;
+  height: auto;
   margin-top: 18px;
   border-radius: 6px;
   border: 1px solid var(--border);
@@ -652,6 +653,10 @@ section {
   transition: opacity 0.2s;
 }
 .case-process-img:hover { opacity: 0.9; }
+
+@media (max-width: 640px) {
+  .case-process-img { max-width: 50%; }
+}
 
 .case-outcome {
   font-size: 10pt;
