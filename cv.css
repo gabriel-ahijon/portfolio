@@ -296,6 +296,16 @@ h2::after {
 .cert-item:last-child { border-bottom: none; }
 
 /* ── PRINT ── */
+@media (max-width: 640px) {
+  body { padding: 24px 20px; }
+  .cv-body {
+    grid-template-columns: 1fr;
+  }
+  main { order: 1; }
+  .sidebar { order: 2; background: none; padding: 0; border-left: none; margin-top: 32px; border-top: 1px solid var(--border); padding-top: 28px; }
+  .sidebar h2:first-child { margin-top: 0; }
+}
+
 @media print {
   body { padding: 1.4cm 1.8cm; font-size: 9pt; }
   h1 { font-size: 26pt; }
