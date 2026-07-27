@@ -583,6 +583,150 @@
       </div>
     </article>
 
+    <!-- Childrin -->
+    <article class="project-card">
+      <div class="project-body">
+        <p class="project-tag">
+          <span data-lang="es" class="inline">Proyecto personal · 2026 · Producto en producción · Ocio familiar · End-to-end</span>
+          <span data-lang="en" class="inline">Personal project · 2026 · Live product · Family leisure · End-to-end</span>
+        </p>
+        <h3 class="project-title">Childrin</h3>
+        <p class="project-tagline">
+          <span data-lang="es" class="inline">Planes en familia. Sitios donde los peques sonríen.</span>
+          <span data-lang="en" class="inline">Family plans. Places where little ones smile.</span>
+        </p>
+
+        <p class="project-desc">
+          <span data-lang="es" class="inline">Plataforma web de ocio familiar para padres con hijos pequeños (0–10 años) que buscan planes de calidad en su entorno. Un proyecto personal desarrollado <strong>de principio a fin en solitario</strong> — desde la estrategia de producto y el diseño hasta el desarrollo y la puesta en producción. Activa en <a href="https://childrin.es" target="_blank" rel="noopener">childrin.es</a>, cubre más de 129 lugares en cinco provincias con fichas detalladas, comentarios moderados, valoraciones y galería.</span>
+          <span data-lang="en" class="inline">A family-leisure web platform for parents with young children (0–10) looking for quality plans nearby. A personal project built <strong>end-to-end, solo</strong> — from product strategy and design to development and production. Live at <a href="https://childrin.es" target="_blank" rel="noopener">childrin.es</a>, it covers 129+ places across five provinces with detailed listings, moderated comments, ratings and galleries.</span>
+        </p>
+
+        <div class="project-chips" style="margin: 20px 0 32px;">
+          <span class="chip">Product Strategy</span>
+          <span class="chip">UX Research</span>
+          <span class="chip">Information Architecture</span>
+          <span class="chip">Design System</span>
+          <span class="chip">UI Design</span>
+          <span class="chip">Astro</span>
+          <span class="chip">Supabase</span>
+          <span class="chip">Cloudflare</span>
+          <span class="chip">AI-assisted</span>
+        </div>
+
+        <!-- GALERÍA: pendiente de imágenes en img/childrin/ — activar como las demás cuando estén -->
+
+        <div class="case-study">
+
+          <div class="case-phase">
+            <div class="case-phase-label">
+              <span data-lang="es" class="inline">01 · El reto</span>
+              <span data-lang="en" class="inline">01 · The Challenge</span>
+            </div>
+            <ul class="case-list">
+              <li>
+                <span data-lang="es" class="inline"><strong>El problema:</strong> encontrar un plan adecuado para niños pequeños cada fin de semana es más difícil de lo que debería. Los grandes portales no filtran por edad ni necesidades específicas, los blogs tienen información dispersa y desactualizada, y las redes inspiran pero no ayudan a planificar.</span>
+                <span data-lang="en" class="inline"><strong>The problem:</strong> finding a suitable plan for young kids every weekend is harder than it should be. Big portals don't filter by age or specific needs, blogs have scattered and outdated information, and social media inspires but doesn't help planning.</span>
+              </li>
+              <li>
+                <span data-lang="es" class="inline"><strong>La oportunidad:</strong> no existe en el mercado hispanohablante una plataforma diseñada específicamente para este perfil. Childrin cubre ese hueco con un enfoque editorial curado, con voz propia, orientado a la practicidad y sin ruido.</span>
+                <span data-lang="en" class="inline"><strong>The opportunity:</strong> no Spanish-language platform is specifically designed for this profile. Childrin fills that gap with a curated editorial approach, its own voice, focused on practicality and free of noise.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="case-phase">
+            <div class="case-phase-label">
+              <span data-lang="es" class="inline">02 · Usuario e investigación</span>
+              <span data-lang="en" class="inline">02 · User &amp; Research</span>
+            </div>
+            <ul class="case-list">
+              <li>
+                <span data-lang="es" class="inline"><strong>Usuario objetivo:</strong> padres y madres de 28–45 años con hijos de 0 a 10, en entornos urbanos, con poco tiempo para buscar y que valoran la fiabilidad y la experiencia de otras familias por encima de las guías genéricas.</span>
+                <span data-lang="en" class="inline"><strong>Target user:</strong> parents aged 28–45 with children aged 0–10, in urban areas, with little time to search, who value reliability and other families' experiences over generic guides.</span>
+              </li>
+              <li>
+                <span data-lang="es" class="inline"><strong>Método:</strong> observación directa como padre y usuario del propio problema, más benchmarking honesto de plataformas similares en otros mercados. Sin presupuesto de investigación formal, pero un punto de partida real y contrastado.</span>
+                <span data-lang="en" class="inline"><strong>Method:</strong> direct observation as a parent living the problem, plus honest benchmarking of similar platforms in other markets. No formal research budget, but a real, grounded starting point.</span>
+              </li>
+              <li>
+                <span data-lang="es" class="inline"><strong>Necesidades clave:</strong> filtrar por actividad y edad; saber si hay sombra, descanso o dónde comer; llegar sin perderse; leer experiencias de otras familias; valorar el plan tras la visita.</span>
+                <span data-lang="en" class="inline"><strong>Key needs:</strong> filter by activity and age; know if there's shade, resting areas or nearby food; arrive without getting lost; read other families' experiences; rate the plan after visiting.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="case-phase">
+            <div class="case-phase-label">
+              <span data-lang="es" class="inline">03 · Arquitectura y sistema de filtrado</span>
+              <span data-lang="en" class="inline">03 · Architecture &amp; Filtering System</span>
+            </div>
+            <ul class="case-list">
+              <li>
+                <span data-lang="es" class="inline"><strong>Estructura en tres niveles:</strong> portada (descubrir), listado (explorar) y ficha de lugar (decidir), siguiendo el flujo real del usuario: descubrir → explorar → decidir → ir → valorar.</span>
+                <span data-lang="en" class="inline"><strong>Three-level structure:</strong> home (discover), listing (explore) and place detail (decide), following the real user flow: discover → explore → decide → go → rate.</span>
+              </li>
+              <li>
+                <span data-lang="es" class="inline"><strong>Modelo de filtrado (el reto de diseño más complejo):</strong> filtros acumulativos (actividad + provincia se combinan libremente), excluyentes ("gratuito" descarta resultados de pago) y una opción "Todas las edades" que deselecciona las edades específicas. La lógica refleja cómo piensa realmente el usuario.</span>
+                <span data-lang="en" class="inline"><strong>Filtering model (the most complex design challenge):</strong> cumulative filters (activity + province combine freely), exclusive ones ("free" rules out paid results) and an "All ages" option that deselects specific ages. The logic mirrors how the user actually thinks.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="case-phase">
+            <div class="case-phase-label">
+              <span data-lang="es" class="inline">04 · Diseño visual y sistema</span>
+              <span data-lang="en" class="inline">04 · Visual Design &amp; System</span>
+            </div>
+            <ul class="case-list">
+              <li>
+                <span data-lang="es" class="inline"><strong>Design system completo:</strong> paleta cálida (coral #FF7043 principal, verde fresco, amarillo sol) sobre fondo crema — decisión deliberada para aportar calidez sin texturas. Tipografía Nunito autohospedada por privacidad y rendimiento.</span>
+                <span data-lang="en" class="inline"><strong>Complete design system:</strong> warm palette (coral #FF7043 primary, fresh green, sunny yellow) on a cream background — a deliberate choice to add warmth without textures. Self-hosted Nunito typeface for privacy and performance.</span>
+              </li>
+              <li>
+                <span data-lang="es" class="inline"><strong>Componentes:</strong> tarjeta de lugar, galería con lightbox y swipe, hero con crossfade, sistema de chips/filtros, formulario de comentario y valoración por estrellas.</span>
+                <span data-lang="en" class="inline"><strong>Components:</strong> place card, gallery with lightbox and swipe, crossfade hero, chip/filter system, comment form and star rating.</span>
+              </li>
+              <li>
+                <span data-lang="es" class="inline"><strong>Tono de voz:</strong> cálido, cercano (tuteo) y práctico. Microcopias cortas y útiles, sin lenguaje de marketing: "¿Cómo fue?" en lugar de "¿Qué te pareció la experiencia?".</span>
+                <span data-lang="en" class="inline"><strong>Tone of voice:</strong> warm, close and practical. Short, useful microcopy without marketing speak: "How was it?" instead of "What did you think of the experience?".</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="case-phase">
+            <div class="case-phase-label">
+              <span data-lang="es" class="inline">05 · Decisiones de UX y producto</span>
+              <span data-lang="en" class="inline">05 · UX &amp; Product Decisions</span>
+            </div>
+            <ul class="case-list">
+              <li>
+                <span data-lang="es" class="inline"><strong>Sin registro:</strong> la participación es anónima para eliminar la fricción y favorecer la participación en una plataforma nueva. Comentarios con <strong>moderación previa</strong> para proteger la credibilidad sin sistemas automáticos complejos.</span>
+                <span data-lang="en" class="inline"><strong>No sign-up:</strong> participation is anonymous to remove friction and encourage engagement on a new platform. Comments use <strong>pre-moderation</strong> to protect credibility without complex automated systems.</span>
+              </li>
+              <li>
+                <span data-lang="es" class="inline"><strong>Detalles nacidos de necesidades reales:</strong> coordenadas de parking diferenciadas (la navegación enruta al parking, no a la entrada) y avisos de ubicación alejada en entornos naturales.</span>
+                <span data-lang="en" class="inline"><strong>Details born from real needs:</strong> dedicated parking coordinates (navigation routes to the car park, not the entrance) and remote-location warnings for natural settings.</span>
+              </li>
+              <li>
+                <span data-lang="es" class="inline"><strong>Rendimiento como criterio de diseño:</strong> sin dependencias externas, imágenes AVIF y JS modular sin frameworks — páginas que cargan en menos de 1 segundo, con Core Web Vitals en verde.</span>
+                <span data-lang="en" class="inline"><strong>Performance as a design criterion:</strong> no external dependencies, AVIF images and modular framework-free JS — pages that load in under 1 second, with Core Web Vitals in the green.</span>
+              </li>
+              <li>
+                <span data-lang="es" class="inline"><strong>Panel de administración propio:</strong> diseñado desde cero para gestionar fichas, fotos y moderación de comentarios sin conocimientos técnicos — clave para la sostenibilidad del producto.</span>
+                <span data-lang="en" class="inline"><strong>Custom admin panel:</strong> designed from scratch to manage listings, photos and comment moderation without technical knowledge — key to the product's sustainability.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="case-outcome">
+            <span data-lang="es" class="inline">Childrin está <strong>activa en producción</strong> desde junio de 2026 con más de 129 fichas en cinco provincias, sistema de comentarios y valoraciones con moderación, y una arquitectura preparada para escalar. Un proyecto que demuestra visión de producto completa: cada decisión de diseño y de negocio tomada de principio a fin, usando la IA como herramienta para multiplicar la capacidad individual sin renunciar al criterio propio.</span>
+            <span data-lang="en" class="inline">Childrin has been <strong>live in production</strong> since June 2026 with 129+ listings across five provinces, a moderated comment and rating system, and an architecture ready to scale. A project that demonstrates full product vision: every design and business decision made end-to-end, using AI as a tool to multiply individual capacity without giving up personal judgement.</span>
+          </div>
+
+        </div>
+      </div>
+    </article>
+
   </div>
 </section>
 
@@ -690,6 +834,14 @@ const GALLERIES = {
     { src: 'img/madrid/05.jpg', caption: 'Detalle recurso — Hotel' },
     { src: 'img/madrid/06.jpg', caption: 'Planificador' },
   ],
+  childrin: [
+    // Pendiente de imágenes en img/childrin/ — descomentar y ajustar cuando estén
+    // { src: 'img/childrin/01.jpg', caption: 'Portada' },
+    // { src: 'img/childrin/02.jpg', caption: 'Listado con filtros' },
+    // { src: 'img/childrin/03.jpg', caption: 'Ficha de lugar' },
+    // { src: 'img/childrin/04.jpg', caption: 'Galería y mapa' },
+    // { src: 'img/childrin/05.jpg', caption: 'Panel de administración' },
+  ],
 };
 
 let currentGallery = [];
@@ -698,7 +850,7 @@ let zoomEnabled = false;
 
 // Galerías donde el zoom aporta (imágenes grandes con detalle).
 // El resto (capturas de móvil) ya se ven completas a máxima resolución.
-const ZOOMABLE_GALLERIES = ['extremadura', 'madrid', 'wer-process'];
+const ZOOMABLE_GALLERIES = ['extremadura', 'madrid', 'wer-process', 'childrin'];
 
 // ── ZOOM STATE ────────────────────────────────────────────
 let zoomActive = false;
