@@ -196,6 +196,19 @@ h2::after {
   margin-bottom: 7px;
 }
 
+.cv-live-link {
+  display: inline-flex; align-items: center; gap: 6px;
+  margin: 6px 0 10px;
+  padding: 7px 14px;
+  background: var(--accent);
+  color: #fff;
+  border-radius: 6px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 8pt;
+  font-weight: 500;
+  text-decoration: none;
+}
+
 .job ul {
   list-style: none;
   padding: 0;
@@ -307,13 +320,18 @@ h2::after {
 }
 
 @media print {
-  body { padding: 1.4cm 1.8cm; font-size: 9pt; }
+  body { padding: 0; font-size: 9pt; }
   h1 { font-size: 26pt; }
   .cv-body { gap: 0 20px; }
   a { color: inherit !important; text-decoration: none; }
   #export-trigger { display: none; }
   .sidebar { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   .chip.primary { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .cv-live-link {
+    -webkit-print-color-adjust: exact; print-color-adjust: exact;
+    color: #fff !important;
+    background: var(--accent) !important;
+  }
 }
 
-@page { size: A4; margin: 0; }
+@page { size: A4; margin: 1.4cm 1.8cm; }
