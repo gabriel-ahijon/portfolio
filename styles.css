@@ -642,6 +642,8 @@ section {
   .lightbox-img      { width: 100%; height: 100vh; max-height: 100vh; object-fit: contain; border-radius: 0; box-shadow: none; }
   .lightbox-footer   { display: none; }
   .lightbox-close    { top: 8px; right: 8px; }
+  .lightbox-img-wrap.fit-width { height: 100vh; overflow-y: auto; align-items: flex-start; }
+  .lightbox-img-wrap.fit-width .lightbox-img { width: 100%; height: auto; max-height: none; object-fit: unset; }
 }
 
 /* ── CASE STUDY ── */
